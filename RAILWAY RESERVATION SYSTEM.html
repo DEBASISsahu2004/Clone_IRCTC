@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Railway Reservation</title>
+    <link rel="stylesheet" href="RAILWAY RESERVATION SYSTEM.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="IRCTC_LOGO.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <p id="home">.</p>
+
+    <!-- Navigation Area Starts-->
+    <nav class="navi">
+        <b class="logo">adventure</b>
+        <a href="#home">home</a>
+        <a href="#holiday">holiday packages</a>
+        <a href="#service">services at station</a>
+        <div class="dropdown"><p>meals</p>
+            <div class="dropdown-content">
+                <a href="RESULT PAGE.html">Order Food - E-Catering</a>
+                <br>
+                <br>
+                <a href="RESULT PAGE.html">Cooked Food Menu</a>
+            </div>
+        </div>
+        <a href="#contact">contact us</a>
+        <a href="INDEX.html">log out</a>
+    </nav>
+    <!-- Navigation Area Ends-->
+    
+    <!-- Home Section Starts-->
+    <div class="home" >
+        <div class="ticket">
+            <form action="RESULT PAGE.html">
+                <p class="text">book </p>
+                <p class="text1">ticket</p>
+                <div class="location">
+                    <label class="from" for="from">FROM : </label>
+                    <input type="text" list="deparature" id="from" placeholder="departure" required>
+                    <datalist id="deparature">
+                        <option value="VISAKHAPATNAM-VSKP">
+                        <option value="KOLKATA-KOAA">
+                        <option value="MUMBAI CENTRAL-MMCT">
+                        <option value="RAYAGADA-RGDA">
+                        <option value="AHMEDABAD-ADI">
+                        <option value="DELHI S ROHILLA-DEE">
+                        <option value="KOTA JN-KOTA">
+                        <option value="BHOPAL-BPL">
+                        <option value="DELHI-DLI">
+                        <option value="HYDERABAD DECAN-HYB">
+                        <option value="AGRA ACNTT-AGC">
+                        <option value="VARANASI JN-BSB">
+                        <option value="BILASPUR JN-BSP">
+                        <option value="JAMMU TAWI-JAT">
+                        <option value="JAIPUR-JP">
+                        <option value="BHUBANESWAR-BBSR">
+                        <option value="CHENNAI EGMORE-MS">
+                        <option value="MATHURA JN-MTJ">
+                        <option value="MYSURE JN-MYS">
+                        <option value="PURI-PURI">
+                        <option value="RAIPUR JN-R">
+                        <option value="NAGPUR-NGP">
+                        <option value="SURAT-ST">
+                        <option value="KSR BENGALURU-SBC">
+                        <option value="MUZAFFARPUR JN-MFP">
+                    </datalist>
+                    <label class="to" for="to">TO : </label>
+                    <input type="text" list="arrive" id="to" placeholder="destination" required>
+                    <datalist id="arrive">
+                        <option value="VISAKHAPATNAM-VSKP">
+                        <option value="KOLKATA-KOAA">
+                        <option value="MUMBAI CENTRAL-MMCT">
+                        <option value="RAYAGADA-RGDA">
+                        <option value="AHMEDABAD-ADI">
+                        <option value="DELHI S ROHILLA-DEE">
+                        <option value="KOTA JN-KOTA">
+                        <option value="BHOPAL-BPL">
+                        <option value="DELHI-DLI">
+                        <option value="HYDERABAD DECAN-HYB">
+                        <option value="AGRA ACNTT-AGC">
+                        <option value="VARANASI JN-BSB">
+                        <option value="BILASPUR JN-BSP">
+                        <option value="JAMMU TAWI-JAT">
+                        <option value="JAIPUR-JP">
+                        <option value="BHUBANESWAR-BBSR">
+                        <option value="CHENNAI EGMORE-MS">
+                        <option value="MATHURA JN-MTJ">
+                        <option value="MYSURE JN-MYS">
+                        <option value="PURI-PURI">
+                        <option value="RAIPUR JN-R">
+                        <option value="NAGPUR-NGP">
+                        <option value="SURAT-ST">
+                        <option value="KSR BENGALURU-SBC">
+                        <option value="MUZAFFARPUR JN-MFP">
+                    </datalist>
+                </div>
+                <div class="date_class">
+                    <label class="date" for="date" >DATE : </label>
+                    <input type="date" name="date" id="date" required>
+                    <label class="class" for="class">CLASSES : </label>
+                    <select name="class" id="class">
+                        <option>all classes</option>
+                        <option>anubhuti class (ea)</option>
+                        <option>ac first classs (1a)</option>
+                        <option>vistadome ac (ev)</option>
+                        <option>exec. chair car (ec)</option>
+                        <option>ac 2 tier (2a)</option>
+                        <option>first class (fc)</option>
+                        <option>ac 3 tier (3a)</option>
+                        <option>ac 3 economy (3e)</option>
+                        <option>vistadome chair car (vc)</option>
+                        <option>ac chair car (cc)</option>
+                        <option>sleeper (sl)</option>
+                        <option>vistadome non-ac (vs)</option>
+                        <option>second sitting (2s)</option>
+                    </select>
+                </div>
+                <div class="category">
+                    <select name="cabin" id="cabin">
+                        <option>general</option>
+                        <option>ladies</option>
+                        <option>lower berth/sr,citizen</option>
+                        <option>person with disability</option>
+                        <option>tatkal</option>
+                        <option>premium tatkal</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">person with disability concession</label>
+                    <input type="checkbox" name="check" id="check1">
+                    <label for="check1">flexible with date</label><br>
+                    <input type="checkbox" name="check" id="check2">
+                    <label for="check2">train with available berth</label>
+                    <input type="checkbox" name="check" id="check3">
+                    <label for="check3">railway pass concession</label><br>
+                </div>
+                <input class="search" type="submit" value="search">
+            </form>
+        </div>    
+        <div class="design">
+            <h1>INDIAN RAILWAYS</h1>
+            <h6>SAFETY | SECURITY | PUNCTUALITY</h6>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br id="holiday">
+    <!-- Home Section Ends-->
+
+    <!-- Holiday Package Section Starts-->
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="holiday">
+        <div class="container">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="Hills.jpg" alt="Hills">
+                    <h1>Rail Tour Packages</h1>
+                    <p>Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+                    <a href="RESULT PAGE.html">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="IP.jpg" alt="Nature">
+                    <h1>International Packages</h1>
+                    <p>Best deals in International Holiday packages, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
+                    <a href="RESULT PAGE.html">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="DAP.jpg" alt="Temple and lake">
+                    <h1>Domestic Air Packages</h1>
+                    <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands. Discover India with us.</p>
+                    <a href="RESULT PAGE.html">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="LT.jpg" alt="Luxury Train">
+                    <h1>Maharajas' Express</h1>
+                    <p>Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+                    <a href="RESULT PAGE.html">Explore More </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="RRP.jpg" alt="Fort">
+                    <h1>Royal Rajasthan Package</h1>
+                    <p>The magic of Rajasthan is unequalled in the world for its heritage, culture, safaris, sand dunes and lush green forests with its wildlife. It is action-packed with outdoors too; take a safari on horses, camels, elephants or even jeeps with the Aravalis - India's oldest mountain range in the backdrop and caress your eyes on the sloppy sand dunes.</p>
+                    <a href="RESULT PAGE.html">Explore More</a>
+                </div>
+            </div>
+            <a href="RESULT PAGE.html">View More </a>
+        </div>
+        <p id="service">.</p>
+    </div>
+    <!-- Holiday Package Section Ends-->
+
+    <!-- Service Section Starts-->
+    <h1 class="heading1">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="services">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat non rem porro autem minus ea officia quidem earum. Iusto voluptas explicabo illum nostrum deleniti repellendus minus quod nulla laudantium.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat non rem porro autem minus ea officia quidem earum. Iusto voluptas explicabo illum nostrum deleniti repellendus minus quod nulla laudantium.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat non rem porro autem minus ea officia quidem earum. Iusto voluptas explicabo illum nostrum deleniti repellendus minus quod nulla laudantium.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat non rem porro autem minus ea officia quidem earum. Iusto voluptas explicabo illum nostrum deleniti repellendus minus quod nulla laudantium.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat non rem porro autem minus ea officia quidem earum. Iusto voluptas explicabo illum nostrum deleniti repellendus minus quod nulla laudantium.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat non rem porro autem minus ea officia quidem earum. Iusto voluptas explicabo illum nostrum deleniti repellendus minus quod nulla laudantium.</p>
+        </div>
+    </div>
+    <p id="contact">.</p>
+    <!-- Service Section Ends-->
+
+    <!-- Contact Section Starts-->
+    <h1 class="heading2">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="contact">
+        <h2>you may contact us</h2>
+        <div class="care">
+            <p class="c1">Customer Care Numbers : </p>
+            <p class="c2">xxxxx OR xxxx-xxxxxxx / xxxx-xxxxxxx (Language: Hindi and English)</p>
+        </div>
+        <div class="det">
+            <p>For Railway tickets booked through IRCTC</p>
+            <p>General Information</p>
+            <p>I-tickets/e-tickets : <a href="mailto: care@irctc.co.in">care@irctc.co.in</a></p>
+            <p>For Cancellation E-tickets : <a href="mailto:etickets@irctc.co.in">etickets@irctc.co.in</a></p>
+            <p>For IRCTC iMudra Prepaid Wallet & Card : <a href="mailto:imudracare@irctc.co.in">imudracare@irctc.co.in</a></p>
+        </div>
+        <div class="help">
+            <p>For IRCTC SBI Card users who do not receive the card within 01 month from the date of application kindly call on the Railway SBI Card Helpline nos. at 0124-39021212 or 18001801295 (if calling from BSNL/MTNL line) or send email to <a href="mailto:customercare@sbicard.com">customercare@sbicard.com</a>. For other queries on your IRCTC SBI card account, kindly email at <a href="mailto:loyaltyprogram@irctc.co.in">loyaltyprogram@irctc.co.in</a> .</p>
+        </div>
+        <div class="address">
+            <p>Registered Office / Corporate Office</p>
+            <p>Indian Railway Catering and Tourism Corporation Ltd.,</p>
+            <p>B-148, 11th Floor, Statesman House,</p>
+            <p>Barakhamba Road, New Delhi 110001</p>
+        </div>
+    </div>
+    <!-- Contact Section Ends-->
+
+    <!-- Fontact Section Starts-->
+    <div id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Indian Railway Catering and Tourism Corporation Ltd. (IRCTC) is a “Mini Ratna (Category-I)” Central Public Sector Enterprise under Ministry of Railways, Government of India. IRCTC was incorporated on 27th September, professionalize and manage the catering and hospitality services at stations, on trains and other locations and to promote domestic and international tourism through development of budget hotels, special tour packages, information & commercial publicity and global reservation systems. It’s registered and Corporate Office is situated at New Delhi.</p>
+            </div>
+            <div class="box">
+                <h3>branch location</h3>
+                <a href="RESULT PAGE.html">india</a>
+                <a href="RESULT PAGE.html">usa</a>
+                <a href="RESULT PAGE.html">japan</a>
+                <a href="RESULT PAGE.html">france</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="RESULT PAGE.html">facebook</a>
+                <a href="RESULT PAGE.html">instagram</a>
+                <a href="RESULT PAGE.html">twitter</a>
+                <a href="RESULT PAGE.html">linkedin</a>
+            </div>
+        </div>
+        <h3>&copy;2022 | all rights reserved</3>
+    </div>
+    <!-- Footer Section Ends-->
+</body>
+</html>
